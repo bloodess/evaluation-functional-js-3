@@ -12,7 +12,7 @@ const sortProduct = input => {
    acc[produit.name] = [{ name: produit.name, 
                           year: date.year(), 
                           monthOfYear: date.month() + 1, 
-                          quantity: date.quantity 
+                          quantity: produit.quantity 
                         }];
 
    return acc;
