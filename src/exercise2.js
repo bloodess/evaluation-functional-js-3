@@ -12,7 +12,10 @@ const yolo = (input) => {
       return acc
     }, [[], [], [], []])
     .map(value => value.map(character => character.name))
+
     .map((value, index) => {
+      console.log('!!!!!!value et index : '+ value + 'Et : ' +index);
+      
       let codeISOIEC5218
       switch (index) {
         case 0: { codeISOIEC5218 = 'not known'; break }
